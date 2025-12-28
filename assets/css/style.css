@@ -3,6 +3,7 @@ html, body{
     margin: 0;
     color: white;
     box-sizing: border-box;    
+    scroll-behavior: smooth;
     overflow-x: hidden;  /* mencegah horizontal scroll */
 }
 
