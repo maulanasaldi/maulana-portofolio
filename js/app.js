@@ -7,6 +7,7 @@ const hoverSign = document.querySelector(".hover-sign")
 const sideBar = document.querySelector('.sidebar');
 const menu = document.querySelector('.menu-icon');
 const close = document.querySelector('.close-icon');
+const sidebarLinks = document.querySelectorAll('.sidebar ul li a');
 
 const videoList = [video1, video2, video3];
 
@@ -32,3 +33,10 @@ close.addEventListener('click', function(){
     sideBar.classList.remove('open-sidebar');
     sideBar.classList.add('close-sidebar');
 })
+
+sidebarLinks.forEach(function(link){
+    link.addEventListener('click', function(){
+        sideBar.classList.remove('open-sidebar');
+        sideBar.classList.add('close-sidebar');
+    })
+});
